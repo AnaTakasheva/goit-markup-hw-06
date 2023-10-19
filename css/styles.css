@@ -50,7 +50,8 @@ ul {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 320px;
+    /* max-width: 320px; */
+    max-width: 350px;
 }
 
 .nav {
@@ -170,29 +171,30 @@ ul {
  /* ПЕРШИЙ БЛОК */
 .section-title {
     background: #2E2F42;
-    padding: 188px 0;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpeg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .title {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 1.12px;
-    line-height: 1.07;
-    max-width: 496px;
+    letter-spacing: 0.02em;
+    line-height: 1.11;
+    max-width: 288px;
+    max-height: 160px;
     /*height: 120px;*/
     margin-left: auto;
     margin-right: auto; /*треба бо є width*/
+
+   
 }
 .button {
     text-align: center;
@@ -245,11 +247,12 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+    /* justify-content: center; */
    
 }
 
 .features-list-item {
-    max-width: 264px;
+    width: 100%;
 }
 
 .container-icon {
@@ -303,10 +306,13 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+    justify-content: center;
 }
 
 .team-member-card {
-    width: 100%;
+    width: 264px;
+
+    /* width: 100%; */
     background:#FFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -393,6 +399,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
+    /* justify-content: center; */
 }
 
 .conteiner-portfolio-item {
@@ -828,6 +835,19 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .conteiner-portfolio-item {
         width: calc((100% - 16px) / 2);
     }
+
+    .section-title {
+        padding: 112px 0;
+    }
+
+    .title {
+    
+        margin-bottom: 36px; 
+        letter-spacing: 0.02em;
+        line-height: 1.07; 
+        font-size: 56px; 
+        max-width: 496px; 
+    }
 }
 
 
@@ -893,5 +913,13 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .conteiner-portfolio-item {
         width: calc((100% - 48px) / 3);
+    }
+
+    .section-title {
+        padding: 188px 0;
+    }
+
+    .title {
+        margin-bottom: 48px;
     }
 }
